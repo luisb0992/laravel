@@ -42,6 +42,9 @@
 			  padding: 20px;
 			  margin: 10px 25px;
 			}
+      body, html, div, section, label, span, h1, h2, h3, h4, table, tr, td, select, input, textarea, option{
+        font-family: calibri light, calibri, arial;
+      }
 	  </style>
   </head>
   <body class="hold-transition skin-red sidebar-mini">
@@ -51,10 +54,10 @@
         <a href="{{route('dashboard')}}" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini">
-          	T
+          	N
           </span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>Despacho</b></span>
+          <span class="logo-lg"><b>Nombre</b></span>
         </a>
 
         <!-- Header Navbar: style can be found in header.less -->

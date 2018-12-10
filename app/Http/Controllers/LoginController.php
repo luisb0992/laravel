@@ -22,9 +22,9 @@ class LoginController extends Controller
 
       if (Auth::attempt($request->only(['user','password']))){
       	//return redirect()->intended('dashboard');
-      	return ['redirect' => route('dashboard'),'status'=> true];
+      	return redirect()->route("dashboard");
       }else{
-      	return ['status' => 'false'];
+      	return redirect()->route('login')->withErrors('¡Error!, Usuario o clave incorrecta');
       }
 	 }
 
@@ -34,5 +34,5 @@ class LoginController extends Controller
 	 		Auth::logout();
 	 		return view('login');
 	 }
-    
+
 }
